@@ -1,5 +1,6 @@
-body{
+body,h1,h2,h3,h4,h5,h6,p {
     margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
 .container{
@@ -62,6 +63,29 @@ body{
         }
     }
 }
+
+.content{
+    background: #dedede;
+    padding: 50px 0px ;
+}
+.contentText{
+    column-gap: 30px;
+    column-count: 3;
+    column-width: 200px;
+}
+
+.listInline li{
+    list-style: none;
+}
+.listInline li::before{
+    content: "- "
+}
+.listImg li::before{
+    content: url(assets/balloon.svg);
+}
+
+
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 1250px) {
